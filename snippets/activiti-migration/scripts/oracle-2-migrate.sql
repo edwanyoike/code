@@ -16,23 +16,23 @@ alter table ACT_HI_ACTINST
     modify ASSIGNEE_ NVARCHAR2(64);
 
 alter table ACT_HI_ACTINST
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_HI_PROCINST
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_HI_TASKINST
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RE_DEPLOYMENT
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RE_PROCDEF
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RU_EVENT_SUBSCR
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RU_EXECUTION
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RU_JOB
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 alter table ACT_RU_TASK
-    modify (TENANT_ID_ default null, TENANT_ID_ NVARCHAR2(64));
+    modify (TENANT_ID_ NVARCHAR2(64) default null);
 
 --- delete users and groups, as you have to re-create them (hashed passwords, different group types, required authorizations)
 delete
